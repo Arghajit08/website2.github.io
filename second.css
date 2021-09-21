@@ -1,0 +1,383 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f3f3;
+    font-family: 'Poppins',sans-serif;
+}
+.menu{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(350px,1fr));
+    grid-gap: 20px 40px;
+}
+
+.neon{
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0 20px;
+    font-size: 4em;
+    color:#fff;
+    text-shadow: 0 0 20px #ff005b;
+}
+.neon:after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left:0;
+    padding: 0 20px;
+    z-index: -1;
+    color:#ff005b;
+    filter: blur(15px);
+}
+.neon:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fe3a80;
+    z-index: -2;
+    opacity: .5;
+    filter: blur(40px);
+}
+.heading{
+    background-image: url("https://img.freepik.com/free-photo/black-chalk-board-texture_89245-170.jpg?size=626&ext=jpg");
+    color: #ffffff;
+    margin-bottom: 30px;
+    padding: 60px 0 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+    justify-content: space-around;
+    
+}
+.films{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.films-container{
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.title{
+    font-size: 30px;
+    font-family: 'segoe UI';
+}
+
+.film-card{
+    width: 80%;
+    height: 450px;
+    background-color: yellow;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.film-detail{
+    height: 225px;
+    width: 100%;
+    background-color: rgba(12, 12, 12, 0.8);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.film-detail:hover{
+    height: 450px;
+}
+
+.film-title{
+    color: white;
+    font-family: 'segoe UI';
+    font-size: 40px;
+}
+
+.padd{
+    padding: 20px;
+}
+
+.card-1{
+    background-image: url('./photos/blackforest.jpg');
+    
+}
+
+.card-2{
+    background-image: url('./photos/whiteforest1.png');
+}
+
+.card-3{
+    background-image: url('./photos/butterscotch.png');
+}
+
+.card-4{
+    background-image: url('./photos/choccake.jpg');
+}
+
+.card-5{
+    background-image: url('./photos/straw.jpg');
+}
+.padd .btn{
+    position: relative;
+    width: 155px;
+    height: 50px;
+    margin: 20px;
+    font-family: 'Segoe UI';
+
+}
+.padd .btn a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-radius: 30px;
+    color: #fff;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+}
+.padd .btn:hover a{
+    letter-spacing: 3px;
+}
+.padd .btn a::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left,rgba(255,255,255,0.15),transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}
+.padd .btn:hover a::before{
+    transform: skewX(45deg) translateX(200%);
+}
+.padd .btn::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.menu .btn:hover::before{
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+.padd .btn::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.padd .btn:hover::after{
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+.padd .btn::before,
+.padd .btn::after{
+    background: #1eff45;
+    box-shadow: 0 0 5px #1eff45,
+    0 0 15px #1eff45,
+    0 0 30px #1eff45,
+    0 0 60px #1eff45;
+}
+#open-button {
+    background-color: #000;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    position: relative;
+    bottom: 23px;
+    right: 48px;
+    width: 240px;
+    display: block;
+    margin-left: 30px;
+    box-shadow: 0px 8px 8px rgba(255, 255, 255, 0.15);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+@media screen and (max-width:420px) {
+    #open-button {
+        bottom: -70px;
+        right: 10px;
+    }
+
+}
+
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    
+    bottom: 0;
+    right: 15px;
+
+    border: 2px solid #000000;
+    z-index: 99999;
+    /* background-image: url(./images/card.png); */
+    /* background-size: 100% 100%; */
+    /* background-position: right; */
+    /* background-repeat: no-repeat; */
+    background-color: #9b9dad;
+
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.8s;
+    animation-name: animatetop;
+    animation-duration: 0.8s;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* Add styles to the form container */
+.form-container {
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+    background-color: #9b9dad;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.form-container h1 {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    border-left: 2px solid #000000;
+    padding-left: 4px;
+
+}
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container textarea
+ {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    margin-left: 0px;
+    border: none;
+    /* background-color: blue; */
+
+    border-bottom: 1px solid #000000;
+    border-radius: 4px;
+}
+
+.form-container input[type=file]{
+
+    width: 90%;
+    padding: 15px;
+    /* margin: 5px 0 22px 0; */
+    
+    border: none;
+    /* display: none; */
+
+}
+
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,
+.form-container textarea:focus {
+    background-color: #fff;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    /* background-color:#fafcfc; */
+    /* color: green; */
+    background: #12e956;
+    color: #ffffff;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: #111;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
