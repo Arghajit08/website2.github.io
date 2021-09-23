@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url(“https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css”);
+
 *{
     padding: 0;
     margin: 0;
@@ -7,6 +17,147 @@ body{
     background-color: #f3f3f3;
     font-family: 'Poppins',sans-serif;
 }
+
+/* .poster{
+    width: 100%;
+    height: 500px;
+    background-image: url(./photos/compressjpg4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.poster h5{
+    /* color: #ffffff; */
+    /* font-size: 24px;
+    padding-left: 150px;
+    top: 50px;
+    position: absolute;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: 'Cinzel', serif;
+}
+.poster h1{
+    color: #222;
+    font-size: 70px;
+    padding-left: 160px;
+    padding-top: 90px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.poster h2{
+    font-size: 50px;
+    padding-left: 190px;
+    /* color: #ffffff; */
+    /* font-weight: 500;
+    margin-top: -5px;
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    
+}
+.poster h4{
+    margin-left: 140px;
+    color: rgb(139, 11, 11);
+    font-family: 'Kalam', cursive;
+    font-size: 24px;
+
+}
+.poster p{
+    color: #000;
+    display: block;
+    padding-left: 100px;
+    width: 35%;
+    font-size: 16px;
+    font-weight: 400;
+}
+.poster .btn{
+
+    margin-top: 40px;
+    margin-left: 140px;
+}
+.poster a{
+    background-color: #970505;
+    padding: 15px 30px;
+    color: #ffffff;
+    text-decoration: none;
+    
+} */ 
+
+
+/* @media screen and (max-width:918px) {
+    .poster p{
+        width: 50%;
+    }
+    
+}
+@media screen and (max-width:751px) {
+    .poster p{
+        width: 60%;
+    }
+    
+}
+@media screen and (max-width:620px) {
+    .poster p{
+        width: 70%;
+    }
+    
+}
+@media screen and (max-width:450px) {
+    .poster{
+        /* background-position: left;
+        background-size: contain; */
+    
+
+    /* .poster h5{
+        color: rgb(43, 40, 40);
+        font-size: 24px;
+       /* text-align: center; 
+        padding-left: 28%;
+        top: 30px;
+        /* position: absolute; 
+    }
+    .poster h1{
+        align-items: center;
+        /* font-size: 100px; 
+        padding-left: 31%;
+        padding-top: 80px;
+
+        color: #222;
+    }
+    .poster h2{
+        /* padding-left: 30%; 
+        text-align: center;
+        padding-left: 0;
+        margin-top: 0px;
+        color: #000;
+        text-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .poster h4{
+        margin-left: 0%;
+        text-align: center;
+        color: rgb(139, 11, 11);
+        font-family: 'Kalam', cursive;
+        font-size: 24px;
+    
+    }
+
+    .poster p{
+        color: #000;
+        display: block;
+        padding-left: 80px;
+        width: 90%;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .poster .btn{
+
+        margin-top: 40px;
+        margin-left: 28%;
+    }
+    
+    
+} */
 .menu{
     padding: 0;
     display: grid;
@@ -21,9 +172,16 @@ body{
     transform: translate(-50%,-50%);
     margin: 0;
     padding: 0 20px;
-    font-size: 4em;
+    font-size: 50px;
     color:#fff;
     text-shadow: 0 0 20px #ff005b;
+}
+
+@media screen and (max-width:700px) {
+    .neon{
+        font-size: 24px;
+    }
+    
 }
 .neon:after{
     content: attr(data-text);
@@ -48,7 +206,9 @@ body{
     filter: blur(40px);
 }
 .heading{
-    background-image: url("https://img.freepik.com/free-photo/black-chalk-board-texture_89245-170.jpg?size=626&ext=jpg");
+    background-image: url("./photos/download.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #ffffff;
     margin-bottom: 30px;
     padding: 60px 0 30px 0;
@@ -72,6 +232,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* background-color: #000; */
 }
 
 .title{
@@ -110,6 +271,10 @@ body{
 .padd{
     padding: 20px;
 }
+
+
+
+
 
 .card-1{
     background-image: url('./photos/blackforest.jpg');
@@ -227,8 +392,173 @@ body{
     0 0 30px #1eff45,
     0 0 60px #1eff45;
 }
-#open-button {
-    background-color: #000;
+
+@media screen and (max-width:700px) {
+    .films{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .films-container{
+        width: 80%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 30px;
+        margin-left: 10%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /* background-color: #000; */
+    }
+    
+    .title{
+        font-size: 30px;
+        font-family: 'segoe UI';
+    }
+    
+    .film-card{
+        width: 80%;
+        margin-left: 5%;
+        height: 250px;
+        background-color: yellow;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 30px;
+    }
+    
+    .film-detail{
+        height: 125px;
+        width: 100%;
+        background-color: rgba(12, 12, 12, 0.8);
+        transition: .4s;
+        cursor: pointer;
+    }
+    
+    .film-detail:hover{
+        height: 250px;
+    }
+    
+    .film-title{
+        color: white;
+        font-family: 'segoe UI';
+        font-size: 20px;
+    }
+    
+    .padd{
+        padding: 20px;
+    }
+
+
+    
+.padd .btn{
+    position: relative;
+    width: 155px;
+    height: 50px;
+    /* margin: 20px; */
+    margin-top: -60px;
+    font-family: 'Segoe UI';
+
+}
+.padd .btn a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-radius: 30px;
+    color: #fff;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+}
+.padd .btn:hover a{
+    letter-spacing: 3px;
+}
+.padd .btn a::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left,rgba(255,255,255,0.15),transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}
+.padd .btn:hover a::before{
+    transform: skewX(45deg) translateX(200%);
+}
+.padd .btn::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.menu .btn:hover::before{
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+.padd .btn::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.padd .btn:hover::after{
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+}
+.padd .btn::before,
+.padd .btn::after{
+    background: #1eff45;
+    box-shadow: 0 0 5px #1eff45,
+    0 0 15px #1eff45,
+    0 0 30px #1eff45,
+    0 0 60px #1eff45;
+}
+
+
+    
+}
+
+
+
+
+    /* background-color: #000;
     color: white;
     padding: 16px 20px;
     border: none;
@@ -241,9 +571,9 @@ body{
     display: block;
     margin-left: 30px;
     box-shadow: 0px 8px 8px rgba(255, 255, 255, 0.15);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; */
 
-}
+
 
 @media screen and (max-width:420px) {
     #open-button {
@@ -260,7 +590,7 @@ body{
     
     bottom: 0;
     right: 15px;
-
+     /* font-size: 50px; */
     border: 2px solid #000000;
     z-index: 99999;
     /* background-image: url(./images/card.png); */
@@ -304,10 +634,12 @@ body{
 
 /* Add styles to the form container */
 .form-container {
-    width: 30%;
-    height: 100%;
+    /* width: 30%; */
+    max-width: 300px;
+    /* height: 100%; */
     padding: 10px;
-    background-color: #9b9dad;
+    /* background-color: #9b9dad; */
+    /* background-color: ; */
     font-family: 'Poppins', sans-serif;
 
 
@@ -321,9 +653,20 @@ body{
     padding-left: 4px;
 
 }
+.notice{
+    width: 100%;
+    /* background-color: #12e956; */
+    height: 150px;
+}
+.form-popup h4{
+    font-size: 18px;
+    font-weight: 500;
+    /* color: #f00; */
+}
 
 /* Full-width input fields */
-.form-container input[type=text],
+.form-container input[type=text],.form-container
+input[type=tel],
 .form-container textarea
  {
     width: 90%;
@@ -371,6 +714,7 @@ body{
 
 }
 
+
 /* Add a red background color to the cancel button */
 .form-container .cancel {
     background-color: #111;
@@ -380,4 +724,24 @@ body{
 .form-container .btn:hover,
 .open-button:hover {
     opacity: 1;
+}
+
+.last{
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+}
+.last p{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 16px;
+}
+@media screen and (max-width:650px) {
+    .last p{
+        font-size: 14px;
+        /* padding: 10px 10px; */
+        width: 100%;
+    }
+    
 }
